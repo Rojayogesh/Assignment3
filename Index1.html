@@ -1,0 +1,102 @@
+<html>
+   <head>
+      <title>Login Details</title>
+      <link rel="Stylesheet" href="Style.css">
+      <script type="text/javascript" src="validate.js">          </script>
+   </head>
+   <body>
+      <form name="Form" action="#" method="POST" >
+         <table>
+            <tr>
+               <td colspan=2>
+                  <center><font size=6><b>Login Form</b></font></center>
+               </td>
+            </tr>
+            <tr>
+               <td><b>FirstName</b></td>
+               <td><input type="text" name="FirstName" id="first" required onblur="Validate(first)"></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>
+                  <p id="error" >Invalid firstName.Allowed only alphabet and space</p>
+               </td>
+            </tr>
+            <tr>
+               <td><b>LastName</b></td>
+               <td><input type="text" name="LastName" id="Last" required onblur="Validate(Last)" ></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                   <p id="error1" >Invalid LastName.Allowed only alphabet and space</p>
+                </td>
+             </tr>
+            <tr>
+               <td><b>PhoneNumber</b></td>
+               <td><input type="tell" name="PhoneNo" id="phno" maxlength="10" required onblur="Validate(phno)" ></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                   <p id="error2" >Invalid phone number</p>
+                </td>
+             </tr>
+            <tr>
+               <td><b>EmailId</b></td>
+               <td><input type="text" name="email" id="eid" required onblur="Validate(eid)" ></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                   <p id="error3" >Please enter correct EmailId.Note:Only gmail is allowed</p>
+                </td>
+             </tr>
+            <tr>
+               <td><b>Street Name</b></td>
+               <td><input type="text" name="street" id="street" required onblur="Validate(street)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                   <p id="error4" >Invalid StreetName.Allowed only alphanumber and special char(#,-)</p>
+                </td>
+             </tr>
+            <tr>
+               <td><b>Country</b></td>
+               <td>
+                  <select id="country" onblur="Validate(country)">
+                     <option selected="" value="Default">Please select a country</option>
+                     <option value="India">India</option>
+                     <option value="USA">USA</option>
+                     <option value="canada">Canada</option>
+                     <option value="china">China</option>
+                     <option value="Mexico">Mexico</option>
+                  </select>
+               </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                   <p id="error5" >Please select your country</p>
+                </td>
+             </tr>
+            <tr>
+               <td><b>ZipCode</b></td>
+               <td><input type="text" name="zipcode" id="zip" maxlength="6" required onblur="Validate(zip)"></td>
+            <tr>
+                    <tr>
+                            <td></td>
+                            <td>
+                               <p id="error6" >Please enter valid zipcode</p>
+                            </td>
+                         </tr>
+               <td></td>
+               <td><input type="submit" id="signup" value="Submit Form" disabled="disabled" onclick="ConvertToJSON()" />
+                  <input type="reset" value="Reset form">
+               </td>
+            </tr>
+         </table>
+      </form>
+   </body>
+</html>

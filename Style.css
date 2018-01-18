@@ -1,0 +1,23 @@
+body{
+    margin-top: 50px;
+}
+table{
+    border-spacing: 5px 10px;
+    padding:2px;
+    width:50%;
+    background-color: bisque;
+    margin:0px auto;
+    border: 1px solid black;
+    border-collapse: separate;
+}
+td{
+    padding-left:5px;
+}
+td:first-child{
+    width: 300px;
+}
+p{
+    display: none;
+    color:red;
+}
+    
